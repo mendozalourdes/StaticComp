@@ -7,9 +7,58 @@
 
 
   * {
-      border: 1px solid blue;
-      font-family: 'Raleway', sans-serif;
-      /* vertical-align: baseline;
+      /* border: 1px solid green; */
+      font-family: 'Verdana', sans-serif;
+      /* vertical-align: baseline; */
       padding: 0;
-      margin: 0; */
+      margin: 5px;
   }
+
+  .main-section {
+    background-color: #EEEEEE;
+  }
+
+  .tour-image {
+    border-radius: 0px;
+    width: 20vw;
+    height: 25vh;
+  }
+
+  .header-nav {
+      /* display: flex; */
+      background-color:#242424;
+      color: white;
+      height: 20vh;
+}
+
+.heading {
+    font-size: 4em;;
+}
+
+.mexico-main-image {
+    height: 21vh;
+    width: 7vw;
+}
+  
+
+  
+  .button {
+      border: none;
+      cursor: pointer;
+  }
+
+  .card-container {
+   display: grid;   
+   grid-template-columns: repeat(4, 1fr);
+   /* grid-gap: 30px; */
+   /* padding: 25px; */
+   padding: 
+  }
+
+  .travel-info-container {
+    box-shadow: 7px 2px 20px 0px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid black;
+    background-color: white;
+  }
+  
