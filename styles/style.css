@@ -1,0 +1,76 @@
+/* *{
+    margin: 0;
+      padding: 0;
+      vertical-align: baseline;
+    font-family: 'Raleway', sans-serif;
+  } */
+* {
+  /* border: 1px solid green; */
+  font-family: 'Verdana', sans-serif;
+  /* vertical-align: baseline; */
+  padding: 0;
+  margin: 5px;
+}
+
+.main-section {
+  background-color: #EEEEEE;
+}
+
+.tour-image {
+  border-radius: 0px;
+  width: 20vw;
+  height: 25vh;
+}
+
+.header-nav {
+  /* display: flex; */
+  background-color: #242424;
+  color: white;
+  height: 20vh;
+}
+
+.heading {
+  font-size: 4em;
+}
+
+.mexico-main-image {
+  height: 21vh;
+  width: 7vw;
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+}
+
+.card-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.travel-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 7px 2px 20px 0px;
+          box-shadow: 7px 2px 20px 0px;
+  padding: 10px 10px 10px 10px;
+  background-color: white;
+  width: 21vw;
+  height: 60vh;
+}
+
+.san-miguel {
+  font-size: 15px;
+}
+
+.travel-link {
+  font-size: 12px;
+}
+/*# sourceMappingURL=style.css.map */
