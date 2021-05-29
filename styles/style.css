@@ -4,7 +4,7 @@
       vertical-align: baseline;
     font-family: 'Raleway', sans-serif;
   } */
-* {
+@import-normalize * {
   /* border: 1px solid green; */
   font-family: 'Verdana', sans-serif;
   /* vertical-align: baseline; */
