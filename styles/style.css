@@ -1,13 +1,15 @@
-/* *{
-    margin: 0;
-      padding: 0;
-      vertical-align: baseline;
-    font-family: 'Raleway', sans-serif;
-  } */
-@import-normalize * {
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  /* border: 1px solid blue; */
+}
+
+body {
   /* border: 1px solid green; */
-  font-family: 'Verdana', sans-serif;
-  /* vertical-align: baseline; */
+  font-family: "Verdana", sans-serif;
   padding: 0;
   margin: 5px;
 }
@@ -43,11 +45,18 @@
   cursor: pointer;
 }
 
+.main-tour-container {
+  height: 175vh;
+}
+
 .card-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3%;
+  grid-column-gap: 0%;
+  height: 105vh;
 }
 
 .travel-info-container {
@@ -63,7 +72,7 @@
   padding: 10px 10px 10px 10px;
   background-color: white;
   width: 21vw;
-  height: 60vh;
+  height: 48vh;
 }
 
 .san-miguel {
