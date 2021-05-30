@@ -41,15 +41,45 @@ p {
   background-color: #EEEEEE;
 }
 
-.header-nav {
-  /* display: flex; */
+.header-nav-container,
+.header1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #242424;
   color: white;
-  height: 20vh;
+  height: 30vh;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em 0em 1em 0em;
+}
+
+.main-title {
+  font-size: 4em;
 }
 
 .heading {
-  font-size: 2em;
+  font-size: 3em;
   height: 16vh;
   margin-left: .5em;
 }
