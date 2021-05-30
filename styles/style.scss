@@ -58,6 +58,7 @@ p {
 .heading {
   font-size: 2em;
   height: 16vh;
+  margin-left: .5em;
 }
 
 
@@ -77,6 +78,7 @@ p {
   grid-gap: 3%;
   grid-column-gap: 0%;
   height: 105vh;
+  margin-left: 2em;
  }
 
  .flex{
@@ -90,38 +92,33 @@ p {
 }
 
 .tour-image {
-  border-radius: 0px;
+  border-radius: .5em;
   width: 20vw;
   height: 25vh;
   overflow: hidden;
   object-fit: cover;
 }
 
-.plane-icon, 
-.booking-info {
-  height: 50px;
-  width: 50px;
+.plane-icon {
+  height: 3em;
+  width: 3em;
   position: absolute;
 }
 
 .booking-info {
+  height: 8em;
+  width: 8em;
+  position: absolute;
   display: flex;
   align-items: center;
   flex-direction: column;
-  right: 45px;
-  bottom: 30px;
+  right: 5px;
+  bottom: 15px;
   background-color: white;
   border: 1px solid gray;
   font-size: .5em;
-  border-radius: 80%;
-}
-
-.booked {
-  font-size: .75em;
-}
-
-.booked-count {
-  font-size: 1.25em;
+  border-radius: 25%;
+  justify-content: center;
 }
 
 .travel-info-container {
@@ -133,7 +130,7 @@ p {
   background-color: white;
   width: 21vw;
   height: 58vh;
-  // border: 1px solid black;
+  border-radius: 1em;
 }
 
 
@@ -164,7 +161,7 @@ p {
       padding: 10px 10px 10px 10px;
       background-color: white;
       width: 35vw;
-      height: 40vh;
+      height: 50vh;
       // border: 1px solid black;
     }
 }
@@ -189,30 +186,24 @@ p {
     display: flex;
     align-items: center;
     flex-direction: column;
-    box-shadow: 7px 2px 20px 0px;
-    padding: 10px 10px 10px 10px;
-    background-color: white;
     width: 21vw;
-    height: 45vh;
-    // border: 1px solid black;
+    height: 55vh;
   }
+  .booking-info {
+    height: 5em;
+    width: 5em;
+  }
+
 }
 
 /* desktop styles */
 @media screen and (min-width: 1200px) {
   body{
-    font-size: 2em;
+    font-size: 1em;
   }
   .travel-info-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 7px 2px 20px 0px;
-    padding: 10px 10px 10px 10px;
-    background-color: white;
     width: 21vw;
-    height: 65vh;
-    // border: 1px solid black;
+    height: 50vh;
   }
 
   .card-container {
