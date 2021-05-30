@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+  text-decoration: none;
   vertical-align: baseline;
   /* border: 1px solid blue; */
 }
@@ -22,6 +23,19 @@
   background-color: #EEEEEE;
 }
 
+.flex{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.plane-icon {
+  height: 50px;
+  width: 50px;
+}
+
+
+
 .tour-image {
   border-radius: 0px;
   width: 20vw;
@@ -36,7 +50,8 @@
 }
 
 .heading {
-  font-size: 4em;;
+  font-size: 4em;
+  height: 16vh;
 }
 
 .mexico-main-image {
@@ -65,14 +80,20 @@
 
 .travel-info-container {
   display: flex;
+  align-items: center;
   flex-direction: column;
   box-shadow: 7px 2px 20px 0px;
   padding: 10px 10px 10px 10px;
-  // border: 1px solid black;
   background-color: white;
   width: 21vw;
-  height: 48vh;
+  height: 68vh;
+  // border: 1px solid black;
 }
+
+// .image-container {
+//   display: flex;
+//   align-items: center;
+// }
 
 .san-miguel {
   font-size: 15px;
@@ -80,4 +101,58 @@
 
 .travel-link {
   font-size: 12px;
+}
+
+
+/* variables */
+// :root{
+//   --primary: 
+// }
+
+
+
+/* base styles */
+body {
+  overflow-x: hidden;
+  font-size: 15px;
+}
+button {
+  background: none;
+  // border: 2px solid purple;
+  color: green;
+  text-transform: uppercase;
+  // display: inline-block;
+
+}
+button:hover{
+  color: red;
+  background-color: purple;
+}
+
+
+
+
+/*fonts */
+
+
+/* mobile styles */
+
+
+/* small table styles */
+@media screen and (min-width: 620px) {
+
+}
+
+/* large tablets and laptop styles */
+@media screen and (min-width: 960px) {
+  body{
+    font-size: 18px;
+  }
+}
+
+/* desktop styles */
+@media screen and (min-width: 1200px) {
+  body{
+    font-size: 20px;
+  }
 }
