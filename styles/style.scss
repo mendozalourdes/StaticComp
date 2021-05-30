@@ -1,6 +1,6 @@
 // @import-normalize
 
-/* reset css */
+// /* reset css */
 * {
   margin: 0;
   padding: 0;
@@ -10,112 +10,14 @@
   /* border: 1px solid blue; */
 }
 
-
-
-  body {
-    /* border: 1px solid green; */
+body {
     font-family: "Verdana", sans-serif;
     padding: 0;
     margin: 5px;
-}
+    overflow-x: hidden;
+    font-size: .5em;
 
-.main-section {
-  background-color: #EEEEEE;
-}
-
-.flex{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.plane-icon {
-  height: 50px;
-  width: 50px;
-}
-
-
-
-.tour-image {
-  border-radius: 0px;
-  width: 20vw;
-  height: 25vh;
-}
-
-.header-nav {
-    /* display: flex; */
-    background-color:#242424;
-    color: white;
-    height: 20vh;
-}
-
-.heading {
-  font-size: 4em;
-  height: 16vh;
-}
-
-.mexico-main-image {
-  height: 21vh;
-  width: 7vw;
-}
-
-
-
-.button {
-    border: none;
-    cursor: pointer;
-}
-
-.main-tour-container {
-  height: 175vh;
-}
-
-.card-container {
-  display: grid;   
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 3%;
-  grid-column-gap: 0%;
-  height: 105vh;
- }
-
-.travel-info-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 7px 2px 20px 0px;
-  padding: 10px 10px 10px 10px;
-  background-color: white;
-  width: 21vw;
-  height: 68vh;
-  // border: 1px solid black;
-}
-
-// .image-container {
-//   display: flex;
-//   align-items: center;
-// }
-
-.san-miguel {
-  font-size: 15px;
-}
-
-.travel-link {
-  font-size: 12px;
-}
-
-
-/* variables */
-// :root{
-//   --primary: 
-// }
-
-
-
-/* base styles */
-body {
-  overflow-x: hidden;
-  font-size: 15px;
-}
+  }
 button {
   background: none;
   // border: 2px solid purple;
@@ -128,31 +30,200 @@ button:hover{
   color: red;
   background-color: purple;
 }
+h1,
+h2,
+h3 {
+  font-size: 1em;
+  font-family: "Verdana", sans-serif;
+  // display: flex;
+  // align-items: center;
+  // flex-direction: column;
+}
+p {
+  font-size: .5em;
+}
 
 
+.main-section {
+  background-color: #EEEEEE;
+}
+
+.header-nav {
+    /* display: flex; */
+    background-color:#242424;
+    color: white;
+    height: 20vh;
+}
+
+.heading {
+  font-size: 2em;
+  height: 16vh;
+}
 
 
-/*fonts */
+.button {
+    border: none;
+    cursor: pointer;
+}
+
+.main-tour-container {
+  height: 275vh;
+}
+
+.card-container {
+  display: grid;   
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1.5fr);
+  grid-gap: 3%;
+  grid-column-gap: 0%;
+  height: 105vh;
+ }
+
+ .flex{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image-container {
+  position: relative;
+}
+
+.tour-image {
+  border-radius: 0px;
+  width: 20vw;
+  height: 25vh;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.plane-icon, 
+.booking-info {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+}
+
+.booking-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  right: 45px;
+  bottom: 30px;
+  background-color: white;
+  border: 1px solid gray;
+  font-size: .5em;
+  border-radius: 80%;
+}
+
+.booked {
+  font-size: .75em;
+}
+
+.booked-count {
+  font-size: 1.25em;
+}
+
+.travel-info-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 7px 2px 20px 0px;
+  padding: 10px 10px 10px 10px;
+  background-color: white;
+  width: 21vw;
+  height: 58vh;
+  // border: 1px solid black;
+}
 
 
 /* mobile styles */
 
 
-/* small table styles */
+/* small tablet styles */
 @media screen and (min-width: 620px) {
-
+  body{
+    font-size: .5em;
+  }
+ .card-container {
+      display: grid;   
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1.5fr);
+      grid-gap: 3%;
+      grid-column-gap: 0%;
+      height: 105vh;
+     }
+     .main-tour-container {
+      height: 275vh;
+    }
+    .travel-info-container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      box-shadow: 7px 2px 20px 0px;
+      padding: 10px 10px 10px 10px;
+      background-color: white;
+      width: 35vw;
+      height: 40vh;
+      // border: 1px solid black;
+    }
 }
 
 /* large tablets and laptop styles */
 @media screen and (min-width: 960px) {
   body{
-    font-size: 18px;
+    font-size: 1em;
+  }
+  .card-container {
+    display: grid;   
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1.5fr);
+    grid-gap: 3%;
+    grid-column-gap: 0%;
+    height: 105vh;
+   }
+   .main-tour-container {
+    height: 200vh;
+  }
+  .travel-info-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 7px 2px 20px 0px;
+    padding: 10px 10px 10px 10px;
+    background-color: white;
+    width: 21vw;
+    height: 45vh;
+    // border: 1px solid black;
   }
 }
 
 /* desktop styles */
 @media screen and (min-width: 1200px) {
   body{
-    font-size: 20px;
+    font-size: 2em;
+  }
+  .travel-info-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 7px 2px 20px 0px;
+    padding: 10px 10px 10px 10px;
+    background-color: white;
+    width: 21vw;
+    height: 65vh;
+    // border: 1px solid black;
+  }
+
+  .card-container {
+    display: grid;   
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1.5fr);
+    grid-gap: 3%;
+    grid-column-gap: 0%;
+    height: 105vh;
+   }
+   .main-tour-container {
+    height: 200vh;
   }
 }
