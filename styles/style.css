@@ -19,11 +19,10 @@ button {
   background: none;
   color: green;
   text-transform: uppercase;
-}
-
-button:hover {
-  color: red;
-  background-color: purple;
+  border-radius: 15%;
+  padding: .5em;
+  font-weight: bold;
+  font-size: 1em;
 }
 
 h1,
@@ -37,20 +36,73 @@ p {
   font-size: .5em;
 }
 
+button:hover {
+  color: red;
+  background-color: green;
+  font-weight: bold;
+}
+
 .main-section {
   background-color: #EEEEEE;
 }
 
-.header-nav {
-  /* display: flex; */
-  background-color: #242424;
+.header-nav-container,
+.header1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #861111;
   color: white;
-  height: 20vh;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 15vh;
+  padding-top: 2.5em;
+}
+
+.icon {
+  height: 5vh;
+  width: 5vw;
+}
+
+.header1 {
+  margin-top: 1em;
+  padding-top: 5em;
+}
+
+.header-nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mexico-main-image {
+  height: 10vh;
+  width: 5vw;
+}
+
+.main-title {
+  font-size: 4em;
 }
 
 .heading {
-  font-size: 2em;
+  font-size: 3em;
   height: 16vh;
+  margin-left: .5em;
 }
 
 .button {
@@ -59,7 +111,7 @@ p {
 }
 
 .main-tour-container {
-  height: 275vh;
+  height: 375vh;
 }
 
 .card-container {
@@ -72,6 +124,7 @@ p {
   grid-gap: 3%;
   grid-column-gap: 0%;
   height: 105vh;
+  margin-left: 2em;
 }
 
 .flex {
@@ -87,12 +140,22 @@ p {
           flex-direction: column;
 }
 
+.text-section {
+  margin-top: 1.5em;
+}
+
+.text-info-box {
+  background-color: #d6d3d3e6;
+  border-radius: .5em;
+  padding: 1em;
+}
+
 .image-container {
   position: relative;
 }
 
 .tour-image {
-  border-radius: 0px;
+  border-radius: .5em;
   width: 20vw;
   height: 25vh;
   overflow: hidden;
@@ -100,14 +163,16 @@ p {
      object-fit: cover;
 }
 
-.plane-icon,
-.booking-info {
-  height: 50px;
-  width: 50px;
+.plane-icon {
+  height: 3em;
+  width: 3em;
   position: absolute;
 }
 
 .booking-info {
+  height: 8em;
+  width: 8em;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,20 +183,15 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  right: 45px;
-  bottom: 30px;
+  right: 5px;
+  bottom: 15px;
   background-color: white;
   border: 1px solid gray;
   font-size: .5em;
-  border-radius: 80%;
-}
-
-.booked {
-  font-size: .75em;
-}
-
-.booked-count {
-  font-size: 1.25em;
+  border-radius: 25%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .travel-info-container {
@@ -150,7 +210,8 @@ p {
   padding: 10px 10px 10px 10px;
   background-color: white;
   width: 21vw;
-  height: 58vh;
+  height: 88vh;
+  border-radius: 1em;
 }
 
 /* mobile styles */
@@ -189,7 +250,7 @@ p {
     padding: 10px 10px 10px 10px;
     background-color: white;
     width: 35vw;
-    height: 40vh;
+    height: 60vh;
   }
 }
 
@@ -210,7 +271,7 @@ p {
     height: 105vh;
   }
   .main-tour-container {
-    height: 200vh;
+    height: 250vh;
   }
   .travel-info-container {
     display: -webkit-box;
@@ -223,37 +284,34 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-shadow: 7px 2px 20px 0px;
-            box-shadow: 7px 2px 20px 0px;
-    padding: 10px 10px 10px 10px;
-    background-color: white;
     width: 21vw;
-    height: 45vh;
+    height: 65vh;
+  }
+  .booking-info {
+    height: 5em;
+    width: 5em;
+  }
+  .header1 {
+    margin-top: 1em;
+    padding-top: 3em;
+  }
+  .header-nav-container {
+    padding-top: 1em;
+  }
+  .icon {
+    height: 5vh;
+    width: 3vw;
   }
 }
 
 /* desktop styles */
 @media screen and (min-width: 1200px) {
   body {
-    font-size: 2em;
+    font-size: 1em;
   }
   .travel-info-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-shadow: 7px 2px 20px 0px;
-            box-shadow: 7px 2px 20px 0px;
-    padding: 10px 10px 10px 10px;
-    background-color: white;
     width: 21vw;
-    height: 65vh;
+    height: 60vh;
   }
   .card-container {
     display: -ms-grid;
@@ -268,6 +326,10 @@ p {
   }
   .main-tour-container {
     height: 200vh;
+  }
+  .header1 {
+    margin-top: 1em;
+    padding-top: 2em;
   }
 }
 /*# sourceMappingURL=style.css.map */

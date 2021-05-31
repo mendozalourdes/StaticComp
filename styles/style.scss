@@ -20,27 +20,26 @@ body {
   }
 button {
   background: none;
-  // border: 2px solid purple;
   color: green;
   text-transform: uppercase;
-  // display: inline-block;
-
-}
-button:hover{
-  color: red;
-  background-color: purple;
+  border-radius: 15%;
+  padding: .5em;
+  font-weight: bold;
+  font-size: 1em;
 }
 h1,
 h2,
 h3 {
   font-size: 1em;
   font-family: "Verdana", sans-serif;
-  // display: flex;
-  // align-items: center;
-  // flex-direction: column;
 }
 p {
   font-size: .5em;
+}
+button:hover{
+  color: red;
+  background-color: green;
+  font-weight: bold;
 }
 
 
@@ -48,16 +47,51 @@ p {
   background-color: #EEEEEE;
 }
 
-.header-nav {
-    /* display: flex; */
-    background-color:#242424;
+
+.header-nav-container,
+.header1 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(134, 17, 17);
     color: white;
-    height: 20vh;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 15vh;
+    padding-top: 2.5em;
+    
+  }
+
+  .icon {
+    height: 5vh;
+    width: 5vw;
+  }
+
+  .header1 {
+    margin-top: 1em;
+    padding-top: 5em;
+  }
+  
+  .header-nav-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.mexico-main-image {
+  height: 10vh;
+  width: 5vw;
+}
+
+
+.main-title {
+  font-size: 4em;
+  // padding-top: 1em;
 }
 
 .heading {
-  font-size: 2em;
+  font-size: 3em;
   height: 16vh;
+  margin-left: .5em;
 }
 
 
@@ -67,7 +101,7 @@ p {
 }
 
 .main-tour-container {
-  height: 275vh;
+  height: 375vh;
 }
 
 .card-container {
@@ -77,6 +111,7 @@ p {
   grid-gap: 3%;
   grid-column-gap: 0%;
   height: 105vh;
+  margin-left: 2em;
  }
 
  .flex{
@@ -85,44 +120,50 @@ p {
   flex-direction: column;
 }
 
+.text-section {
+  margin-top: 1.5em;
+}
+
+.text-info-box {
+  background-color: #d6d3d3e6;
+  border-radius: .5em;
+  padding: 1em;
+}
+
 .image-container {
   position: relative;
 }
 
 .tour-image {
-  border-radius: 0px;
+  border-radius: .5em;
   width: 20vw;
   height: 25vh;
   overflow: hidden;
   object-fit: cover;
 }
 
-.plane-icon, 
-.booking-info {
-  height: 50px;
-  width: 50px;
+.plane-icon {
+  height: 3em;
+  width: 3em;
   position: absolute;
 }
 
 .booking-info {
+  height: 8em;
+  width: 8em;
+  position: absolute;
   display: flex;
   align-items: center;
   flex-direction: column;
-  right: 45px;
-  bottom: 30px;
+  right: 5px;
+  bottom: 15px;
   background-color: white;
   border: 1px solid gray;
   font-size: .5em;
-  border-radius: 80%;
+  border-radius: 25%;
+  justify-content: center;
 }
 
-.booked {
-  font-size: .75em;
-}
-
-.booked-count {
-  font-size: 1.25em;
-}
 
 .travel-info-container {
   display: flex;
@@ -132,8 +173,8 @@ p {
   padding: 10px 10px 10px 10px;
   background-color: white;
   width: 21vw;
-  height: 58vh;
-  // border: 1px solid black;
+  height: 88vh;
+  border-radius: 1em;
 }
 
 
@@ -164,7 +205,7 @@ p {
       padding: 10px 10px 10px 10px;
       background-color: white;
       width: 35vw;
-      height: 40vh;
+      height: 60vh;
       // border: 1px solid black;
     }
 }
@@ -183,36 +224,42 @@ p {
     height: 105vh;
    }
    .main-tour-container {
-    height: 200vh;
+    height: 250vh;
   }
   .travel-info-container {
     display: flex;
     align-items: center;
     flex-direction: column;
-    box-shadow: 7px 2px 20px 0px;
-    padding: 10px 10px 10px 10px;
-    background-color: white;
     width: 21vw;
-    height: 45vh;
-    // border: 1px solid black;
+    height: 65vh;
+  }
+  .booking-info {
+    height: 5em;
+    width: 5em;
+  }
+
+  .header1 {
+    margin-top: 1em;
+    padding-top: 3em;
+  }
+
+  .header-nav-container {
+    padding-top: 1em;
+  }
+  .icon {
+    height: 5vh;
+    width: 3vw;
   }
 }
 
 /* desktop styles */
 @media screen and (min-width: 1200px) {
   body{
-    font-size: 2em;
+    font-size: 1em;
   }
   .travel-info-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 7px 2px 20px 0px;
-    padding: 10px 10px 10px 10px;
-    background-color: white;
     width: 21vw;
-    height: 65vh;
-    // border: 1px solid black;
+    height: 60vh;
   }
 
   .card-container {
@@ -225,5 +272,11 @@ p {
    }
    .main-tour-container {
     height: 200vh;
+  }
+
+  
+  .header1 {
+    margin-top: 1em;
+    padding-top: 2em;
   }
 }
