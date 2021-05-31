@@ -12,7 +12,7 @@ body {
   padding: 0;
   margin: 5px;
   overflow-x: hidden;
-  font-size: .5em;
+  font-size: 0.5em;
 }
 
 button {
@@ -20,7 +20,7 @@ button {
   color: green;
   text-transform: uppercase;
   border-radius: 15%;
-  padding: .5em;
+  padding: 0.5em;
   font-weight: bold;
   font-size: 1em;
 }
@@ -33,7 +33,7 @@ h3 {
 }
 
 p {
-  font-size: .5em;
+  font-size: 0.5em;
 }
 
 button:hover {
@@ -43,7 +43,7 @@ button:hover {
 }
 
 .main-section {
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
 }
 
 .header-nav-container,
@@ -53,16 +53,16 @@ button:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-color: #861111;
   color: white;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 15vh;
   padding-top: 2.5em;
 }
@@ -82,12 +82,12 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .mexico-main-image {
@@ -102,7 +102,7 @@ button:hover {
 .heading {
   font-size: 3em;
   height: 16vh;
-  margin-left: .5em;
+  margin-left: 0.5em;
 }
 
 .button {
@@ -117,10 +117,10 @@ button:hover {
 .card-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (1.5fr)[4];
-      grid-template-rows: repeat(4, 1.5fr);
+  -ms-grid-columns: (1fr) [2];
+  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1.5fr) [4];
+  grid-template-rows: repeat(4, 1.5fr);
   grid-gap: 3%;
   grid-column-gap: 0%;
   height: 105vh;
@@ -132,12 +132,12 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .text-section {
@@ -146,7 +146,7 @@ button:hover {
 
 .text-info-box {
   background-color: #d6d3d3e6;
-  border-radius: .5em;
+  border-radius: 0.5em;
   padding: 1em;
 }
 
@@ -155,12 +155,12 @@ button:hover {
 }
 
 .tour-image {
-  border-radius: .5em;
+  border-radius: 0.5em;
   width: 20vw;
   height: 25vh;
   overflow: hidden;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .plane-icon {
@@ -177,21 +177,21 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   right: 5px;
   bottom: 15px;
   background-color: white;
   border: 1px solid gray;
-  font-size: .5em;
+  font-size: 0.5em;
   border-radius: 25%;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .travel-info-container {
@@ -199,14 +199,14 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-shadow: 7px 2px 20px 0px;
-          box-shadow: 7px 2px 20px 0px;
+  box-shadow: 7px 2px 20px 0px;
   padding: 10px 10px 10px 10px;
   background-color: white;
   width: 21vw;
@@ -218,15 +218,15 @@ button:hover {
 /* small tablet styles */
 @media screen and (min-width: 620px) {
   body {
-    font-size: .5em;
+    font-size: 0.5em;
   }
   .card-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1.5fr)[4];
-        grid-template-rows: repeat(4, 1.5fr);
+    -ms-grid-columns: (1fr) [2];
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1.5fr) [4];
+    grid-template-rows: repeat(4, 1.5fr);
     grid-gap: 3%;
     grid-column-gap: 0%;
     height: 105vh;
@@ -239,14 +239,14 @@ button:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-shadow: 7px 2px 20px 0px;
-            box-shadow: 7px 2px 20px 0px;
+    box-shadow: 7px 2px 20px 0px;
     padding: 10px 10px 10px 10px;
     background-color: white;
     width: 35vw;
@@ -262,10 +262,10 @@ button:hover {
   .card-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: (1.5fr)[3];
-        grid-template-rows: repeat(3, 1.5fr);
+    -ms-grid-columns: (1fr) [3];
+    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1.5fr) [3];
+    grid-template-rows: repeat(3, 1.5fr);
     grid-gap: 3%;
     grid-column-gap: 0%;
     height: 105vh;
@@ -278,12 +278,12 @@ button:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: 21vw;
     height: 65vh;
   }
@@ -316,10 +316,10 @@ button:hover {
   .card-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
-    -ms-grid-rows: (1.5fr)[2];
-        grid-template-rows: repeat(2, 1.5fr);
+    -ms-grid-columns: (1fr) [4];
+    grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1.5fr) [2];
+    grid-template-rows: repeat(2, 1.5fr);
     grid-gap: 3%;
     grid-column-gap: 0%;
     height: 105vh;
