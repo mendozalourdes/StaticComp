@@ -19,11 +19,10 @@ button {
   background: none;
   color: green;
   text-transform: uppercase;
-}
-
-button:hover {
-  color: red;
-  background-color: purple;
+  border-radius: 15%;
+  padding: .5em;
+  font-weight: bold;
+  font-size: 1em;
 }
 
 h1,
@@ -35,6 +34,12 @@ h3 {
 
 p {
   font-size: .5em;
+}
+
+button:hover {
+  color: red;
+  background-color: green;
+  font-weight: bold;
 }
 
 .main-section {
@@ -50,28 +55,44 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #242424;
+  background-color: #861111;
   color: white;
-  height: 30vh;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 15vh;
+  padding-top: 2.5em;
+}
+
+.icon {
+  height: 5vh;
+  width: 5vw;
+}
+
+.header1 {
+  margin-top: 1em;
+  padding-top: 5em;
 }
 
 .header-nav-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 1em 0em 1em 0em;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mexico-main-image {
+  height: 10vh;
+  width: 5vw;
 }
 
 .main-title {
@@ -90,7 +111,7 @@ p {
 }
 
 .main-tour-container {
-  height: 275vh;
+  height: 375vh;
 }
 
 .card-container {
@@ -117,6 +138,16 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.text-section {
+  margin-top: 1.5em;
+}
+
+.text-info-box {
+  background-color: #d6d3d3e6;
+  border-radius: .5em;
+  padding: 1em;
 }
 
 .image-container {
@@ -179,7 +210,7 @@ p {
   padding: 10px 10px 10px 10px;
   background-color: white;
   width: 21vw;
-  height: 58vh;
+  height: 88vh;
   border-radius: 1em;
 }
 
@@ -219,7 +250,7 @@ p {
     padding: 10px 10px 10px 10px;
     background-color: white;
     width: 35vw;
-    height: 50vh;
+    height: 60vh;
   }
 }
 
@@ -240,7 +271,7 @@ p {
     height: 105vh;
   }
   .main-tour-container {
-    height: 200vh;
+    height: 250vh;
   }
   .travel-info-container {
     display: -webkit-box;
@@ -254,11 +285,22 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 21vw;
-    height: 55vh;
+    height: 65vh;
   }
   .booking-info {
     height: 5em;
     width: 5em;
+  }
+  .header1 {
+    margin-top: 1em;
+    padding-top: 3em;
+  }
+  .header-nav-container {
+    padding-top: 1em;
+  }
+  .icon {
+    height: 5vh;
+    width: 3vw;
   }
 }
 
@@ -269,7 +311,7 @@ p {
   }
   .travel-info-container {
     width: 21vw;
-    height: 50vh;
+    height: 60vh;
   }
   .card-container {
     display: -ms-grid;
@@ -284,6 +326,10 @@ p {
   }
   .main-tour-container {
     height: 200vh;
+  }
+  .header1 {
+    margin-top: 1em;
+    padding-top: 2em;
   }
 }
 /*# sourceMappingURL=style.css.map */

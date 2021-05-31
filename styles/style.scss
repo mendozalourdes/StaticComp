@@ -22,13 +22,10 @@ button {
   background: none;
   color: green;
   text-transform: uppercase;
-  // border: 2px solid purple;
-  // display: inline-block;
-
-}
-button:hover{
-  color: red;
-  background-color: purple;
+  border-radius: 15%;
+  padding: .5em;
+  font-weight: bold;
+  font-size: 1em;
 }
 h1,
 h2,
@@ -39,39 +36,56 @@ h3 {
 p {
   font-size: .5em;
 }
+button:hover{
+  color: red;
+  background-color: green;
+  font-weight: bold;
+}
 
 
 .main-section {
   background-color: #EEEEEE;
 }
 
+
 .header-nav-container,
 .header1 {
     display: flex;
     flex-direction: column;
-    // align-items: flex-start;
-    background-color:#242424;
+    background-color: rgb(134, 17, 17);
     color: white;
-    height: 30vh;
     justify-content: space-evenly;
     align-items: center;
-    // font-size: 2em;
+    height: 15vh;
+    padding-top: 2.5em;
     
+  }
+
+  .icon {
+    height: 5vh;
+    width: 5vw;
+  }
+
+  .header1 {
+    margin-top: 1em;
+    padding-top: 5em;
   }
   
   .header-nav-container {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 1em 0em 1em 0em;
+    justify-content: space-evenly;
+    flex-direction: row;
 }
 
-// .top-nav {
+.mexico-main-image {
+  height: 10vh;
+  width: 5vw;
+}
 
-// }
 
 .main-title {
   font-size: 4em;
+  // padding-top: 1em;
 }
 
 .heading {
@@ -87,7 +101,7 @@ p {
 }
 
 .main-tour-container {
-  height: 275vh;
+  height: 375vh;
 }
 
 .card-container {
@@ -104,6 +118,16 @@ p {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.text-section {
+  margin-top: 1.5em;
+}
+
+.text-info-box {
+  background-color: #d6d3d3e6;
+  border-radius: .5em;
+  padding: 1em;
 }
 
 .image-container {
@@ -140,6 +164,7 @@ p {
   justify-content: center;
 }
 
+
 .travel-info-container {
   display: flex;
   align-items: center;
@@ -148,7 +173,7 @@ p {
   padding: 10px 10px 10px 10px;
   background-color: white;
   width: 21vw;
-  height: 58vh;
+  height: 88vh;
   border-radius: 1em;
 }
 
@@ -180,7 +205,7 @@ p {
       padding: 10px 10px 10px 10px;
       background-color: white;
       width: 35vw;
-      height: 50vh;
+      height: 60vh;
       // border: 1px solid black;
     }
 }
@@ -199,20 +224,32 @@ p {
     height: 105vh;
    }
    .main-tour-container {
-    height: 200vh;
+    height: 250vh;
   }
   .travel-info-container {
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 21vw;
-    height: 55vh;
+    height: 65vh;
   }
   .booking-info {
     height: 5em;
     width: 5em;
   }
 
+  .header1 {
+    margin-top: 1em;
+    padding-top: 3em;
+  }
+
+  .header-nav-container {
+    padding-top: 1em;
+  }
+  .icon {
+    height: 5vh;
+    width: 3vw;
+  }
 }
 
 /* desktop styles */
@@ -222,7 +259,7 @@ p {
   }
   .travel-info-container {
     width: 21vw;
-    height: 50vh;
+    height: 60vh;
   }
 
   .card-container {
@@ -235,5 +272,11 @@ p {
    }
    .main-tour-container {
     height: 200vh;
+  }
+
+  
+  .header1 {
+    margin-top: 1em;
+    padding-top: 2em;
   }
 }
