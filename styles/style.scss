@@ -106,8 +106,8 @@ button:hover{
 
 .card-container {
   display: grid;   
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1.5fr);
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(8, 1.5fr);
   grid-gap: 3%;
   grid-column-gap: 0%;
   height: 105vh;
@@ -136,8 +136,8 @@ button:hover{
 
 .tour-image {
   border-radius: .5em;
-  width: 20vw;
-  height: 25vh;
+  width: 50vw;
+  height: 30vh;
   overflow: hidden;
   object-fit: cover;
 }
@@ -146,6 +146,9 @@ button:hover{
   height: 3em;
   width: 3em;
   position: absolute;
+}
+.plane-icon::hover {
+  cursor: pointer;
 }
 
 .booking-info {
@@ -172,9 +175,10 @@ button:hover{
   box-shadow: 7px 2px 20px 0px;
   padding: 10px 10px 10px 10px;
   background-color: white;
-  width: 21vw;
-  height: 88vh;
+  width: 50vw;
+  height: 55vh;
   border-radius: 1em;
+  margin-left: 20%;
 }
 
 
@@ -206,8 +210,13 @@ button:hover{
       background-color: white;
       width: 35vw;
       height: 60vh;
-      // border: 1px solid black;
-    }
+      margin-left: 5%;    }
+
+      .tour-image {
+        border-radius: .5em;
+        width: 35vw;
+        height: 25vh;
+      }
 }
 
 /* large tablets and laptop styles */
@@ -250,6 +259,12 @@ button:hover{
     height: 5vh;
     width: 3vw;
   }
+
+  .tour-image {
+    border-radius: .5em;
+    width: 20vw;
+    height: 25vh;
+  }
 }
 
 /* desktop styles */
@@ -260,6 +275,7 @@ button:hover{
   .travel-info-container {
     width: 21vw;
     height: 60vh;
+    margin: 2%;
   }
 
   .card-container {
