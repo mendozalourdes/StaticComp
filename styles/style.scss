@@ -58,6 +58,7 @@ button:hover{
     align-items: center;
     height: 15vh;
     padding-top: 2.5em;
+    font-size: 1.25em;
     
   }
 
@@ -179,6 +180,7 @@ button:hover{
   height: 55vh;
   border-radius: 1em;
   margin-left: 20%;
+  font-size: 1.75em;
 }
 
 
@@ -210,7 +212,9 @@ button:hover{
       background-color: white;
       width: 35vw;
       height: 60vh;
-      margin-left: 5%;    }
+      margin-left: 5%;
+      font-size: 2.5em;    
+    }
 
       .tour-image {
         border-radius: .5em;
@@ -241,6 +245,7 @@ button:hover{
     flex-direction: column;
     width: 21vw;
     height: 65vh;
+    font-size: 1.5em;
   }
   .booking-info {
     height: 5em;
@@ -276,6 +281,7 @@ button:hover{
     width: 21vw;
     height: 60vh;
     margin: 2%;
+    font-size: 1.5em;
   }
 
   .card-container {
